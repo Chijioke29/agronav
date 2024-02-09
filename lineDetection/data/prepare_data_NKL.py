@@ -14,7 +14,7 @@ from skimage.measure import label, regionprops
 parser = argparse.ArgumentParser(description="Prepare semantic line data format.")
 parser.add_argument('--root', type=str, required=True, help='the data root dir.')
 parser.add_argument('--label', type=str, required=True, help='the label root dir.')
-parser.add_argument('--save-dir', type=str, required=True, help='save-dir')
+parser.add_argument('--save_dir', type=str, required=True, help='save_dir')
 parser.add_argument('--fixsize', type=int, default=None, help='fix resize of images and annotations')
 parser.add_argument('--numangle', type=int, default=100)
 parser.add_argument('--numrho', type=int, default=100)
