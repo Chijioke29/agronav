@@ -2,7 +2,7 @@ import os
 import random
 
 # Path to the generated filename list
-filename_list_path = 'training/agroNav_LineDetection_train.txt'
+filename_list_path = './data/training/agroNav_LineDetection_train.txt'
 
 # Percentage of data to be used for validation
 validation_percentage = 20
@@ -22,8 +22,8 @@ validation_filenames = filenames[:num_validation_samples]
 training_filenames = filenames[num_validation_samples:]
 
 # Write the filenames to separate .txt files for training and validation
-with open('agroNav_LineDetection_train.txt', 'w') as train_file:
+with open('./data/training/agroNav_LineDetection_train.txt', 'w') as train_file:
     train_file.writelines(training_filenames)
 
-with open('agroNav_LineDetection_val.txt', 'w') as val_file:
+with open('./data/training/agroNav_LineDetection_val.txt', 'w') as val_file:
     val_file.writelines(validation_filenames)
