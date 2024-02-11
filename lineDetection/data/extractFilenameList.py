@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 
 # Import an image from directory:
-read_path = './data/agroNav_LineDetection' #'/content/drive/My Drive/agroNav_LineDetection'
+read_path = '/content/drive/My Drive/agroNav_LineDetection' #'./data/agroNav_LineDetection'
 
 with open('./data/training/agroNav_LineDetection_train.txt', 'w') as f:
     for file in glob.glob(os.path.join(read_path, '*.jpg')):
